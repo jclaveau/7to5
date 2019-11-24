@@ -111,7 +111,7 @@ class ConverterTest extends TestCase
     /** @test */
     public function it_will_throw_an_exception_if_the_source_file_does_not_exist()
     {
-        $this->setExpectedException(InvalidParameter::class);
+        $this->expectException(InvalidParameter::class);
 
         new Converter('thisFileDoesNotExist.php');
     }

@@ -8,7 +8,7 @@ use Spatie\Php7to5\DirectoryConverter;
 
 class DirectoryConverterTest extends TestCase
 {
-    public function setUp()
+    protected function setUp() : void
     {
         parent::setUp();
 
